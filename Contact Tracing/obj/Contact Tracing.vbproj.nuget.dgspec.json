@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Kitts Things 1-1\\5-2nd sem\\Elective 3\\Assignments\\Contact Tracing\\Contact Tracing\\Contact Tracing.vbproj": {}
+    "C:\\Users\\User\\Desktop\\Kitts Things 1-1\\5-2nd sem\\Elective 3\\Assignments\\Contact Tracing Viewer\\Contact Tracing\\Contact Tracing.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Kitts Things 1-1\\5-2nd sem\\Elective 3\\Assignments\\Contact Tracing\\Contact Tracing\\Contact Tracing.vbproj": {
+    "C:\\Users\\User\\Desktop\\Kitts Things 1-1\\5-2nd sem\\Elective 3\\Assignments\\Contact Tracing Viewer\\Contact Tracing\\Contact Tracing.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Kitts Things 1-1\\5-2nd sem\\Elective 3\\Assignments\\Contact Tracing\\Contact Tracing\\Contact Tracing.vbproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Kitts Things 1-1\\5-2nd sem\\Elective 3\\Assignments\\Contact Tracing Viewer\\Contact Tracing\\Contact Tracing.vbproj",
         "projectName": "Contact Tracing",
-        "projectPath": "C:\\Users\\User\\Desktop\\Kitts Things 1-1\\5-2nd sem\\Elective 3\\Assignments\\Contact Tracing\\Contact Tracing\\Contact Tracing.vbproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Kitts Things 1-1\\5-2nd sem\\Elective 3\\Assignments\\Contact Tracing Viewer\\Contact Tracing\\Contact Tracing.vbproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Kitts Things 1-1\\5-2nd sem\\Elective 3\\Assignments\\Contact Tracing\\Contact Tracing\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Kitts Things 1-1\\5-2nd sem\\Elective 3\\Assignments\\Contact Tracing Viewer\\Contact Tracing\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,24 @@
+﻿Date & Time Submitted: June 18, 2022; Saturday; 11:06 AM
+Name: Johndell S. Kitts
+Address: address try st
+Age: 22
+Gender: Male
+Travelled: No
+Have Contact: No
+Sickness:
+Phone Number: 09123123123
+Email Address: jd@gmail.com
+
+
+Date & Time Submitted: June 18, 2022; Saturday; 11:06 AM
+Name: Gagalain Letsgo
+Address: kahit saan st
+Age: 25
+Gender: Female
+Travelled: Yes
+Have Contact: Yes
+Sickness: Breathing Difficulty;
+Phone Number: 09123214123
+Email Address: gala@gmail.com
+
+

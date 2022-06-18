@@ -8,10 +8,17 @@ Module OutputController
     Public contactRadio = New RadioButton() {mainForm.contactYes, mainForm.contactNo}
     Public checkboxes = New CheckBox() _
         {mainForm.sicknessBreath, mainForm.sicknessCold, mainForm.sicknessFever}
-    Public Sub FormToText()
+
+    Public Sub GenerateTextFile()
+        FormToText("forms\SubmittedForms.txt")
+        FormToText("forms\" & DateTime.Now.ToString("MMMM dd, yyyy; dddd") & ".txt")
+        ResetInputs()
+    End Sub
+
+    Public Sub FormToText(ByVal pathName As String)
         Dim form As StreamWriter
-        form = My.Computer.FileSystem.OpenTextFileWriter("SubmittedForms.txt", True)
-        form.WriteLine($"Date & Time Submitted: {DateTime.Now.ToString()}")
+        form = My.Computer.FileSystem.OpenTextFileWriter(pathName, True)
+        form.WriteLine($"Date & Time Submitted: {DateTime.Now.ToString("MMMM dd, yyyy; dddd; hh:MM tt")}")
         form.WriteLine($"Name: {mainForm.nameInput.Text}")
         form.WriteLine($"Address: {mainForm.addressInput.Text}")
         form.WriteLine($"Age: {mainForm.ageInput.Text}")
@@ -41,6 +48,5 @@ Module OutputController
         form.WriteLine($"Email Address: {mainForm.emailInput.Text}")
         form.WriteLine($"{vbCrLf}")
         form.Close()
-        ResetInputs()
     End Sub
 End Module

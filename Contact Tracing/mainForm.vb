@@ -23,7 +23,7 @@ Public Class mainForm
             messageLabel.Text = $"Please input/select properly your {failedInput}."
             Exit Sub
         End If
-        FormToText()
+        GenerateTextFile()
         messageLabel.Text = "Your form has been submitted."
     End Sub
 
