@@ -42,6 +42,7 @@ Partial Class Viewer
         Me.submissionText.Location = New System.Drawing.Point(13, 42)
         Me.submissionText.Multiline = True
         Me.submissionText.Name = "submissionText"
+        Me.submissionText.ReadOnly = True
         Me.submissionText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.submissionText.Size = New System.Drawing.Size(443, 460)
         Me.submissionText.TabIndex = 1
