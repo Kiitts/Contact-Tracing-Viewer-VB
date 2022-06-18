@@ -102,4 +102,11 @@ Module OutputController
         Return False
     End Function
 
+    Public Function GetText(ByRef path As String) As String
+        If File.Exists(path) Then
+            Return File.ReadAllText(path)
+        End If
+        Return "None"
+    End Function
+
 End Module

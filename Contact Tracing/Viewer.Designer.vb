@@ -23,12 +23,13 @@ Partial Class Viewer
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.formListBox = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.submissionText = New System.Windows.Forms.TextBox()
         Me.refreshButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'formListBox
         '
+        Me.formListBox.Font = New System.Drawing.Font("Courier New", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.formListBox.FormattingEnabled = True
         Me.formListBox.Items.AddRange(New Object() {"All"})
         Me.formListBox.Location = New System.Drawing.Point(12, 12)
@@ -36,13 +37,14 @@ Partial Class Viewer
         Me.formListBox.Size = New System.Drawing.Size(244, 23)
         Me.formListBox.TabIndex = 0
         '
-        'TextBox1
+        'submissionText
         '
-        Me.TextBox1.Location = New System.Drawing.Point(13, 42)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(443, 460)
-        Me.TextBox1.TabIndex = 1
+        Me.submissionText.Location = New System.Drawing.Point(13, 42)
+        Me.submissionText.Multiline = True
+        Me.submissionText.Name = "submissionText"
+        Me.submissionText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.submissionText.Size = New System.Drawing.Size(443, 460)
+        Me.submissionText.TabIndex = 1
         '
         'refreshButton
         '
@@ -59,7 +61,7 @@ Partial Class Viewer
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(468, 514)
         Me.Controls.Add(Me.refreshButton)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.submissionText)
         Me.Controls.Add(Me.formListBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Viewer"
@@ -70,6 +72,6 @@ Partial Class Viewer
     End Sub
 
     Friend WithEvents formListBox As ComboBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents submissionText As TextBox
     Friend WithEvents refreshButton As Button
 End Class
