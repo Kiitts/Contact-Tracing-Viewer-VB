@@ -22,3 +22,39 @@ Phone Number: 09123214123
 Email Address: gala@gmail.com
 
 
+Date & Time Submitted: June 18, 2022; Saturday; 02:06 PM
+Name: Sakitin
+Address: try mag gamot
+Age: 43
+Gender: Male
+Travelled: No
+Have Contact: No
+Sickness: Breathing Difficulty; Cold; Fever;
+Phone Number: 12313123131
+Email Address: help@gmail.com
+
+
+Date & Time Submitted: June 18, 2022; Saturday; 02:06 PM
+Name: Mapabarkada kahit kanino
+Address: sa bahay ng tropa
+Age: 18
+Gender: Male
+Travelled: No
+Have Contact: Yes
+Sickness:
+Phone Number: 12312412421
+Email Address: try@gmail.com
+
+
+Date & Time Submitted: June 18, 2022; Saturday; 02:06 PM
+Name: huling subok
+Address: wewe
+Age: 54
+Gender: Female
+Travelled: No
+Have Contact: No
+Sickness:
+Phone Number: 12314124131
+Email Address: try@gmail.com
+
+

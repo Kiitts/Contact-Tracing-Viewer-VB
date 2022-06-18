@@ -21,4 +21,12 @@ Public Class MainLayout
     Private Sub exitButton_Click(sender As Object, e As EventArgs) Handles exitButton.Click
         Me.Close()
     End Sub
+
+    Private Sub submissionButton_Click(sender As Object, e As EventArgs) Handles submissionButton.Click
+        MainLayoutController.loadForm(Viewer, Me)
+    End Sub
+
+    Private Sub formButton_Click(sender As Object, e As EventArgs) Handles formButton.Click
+        MainLayoutController.loadForm(mainForm, Me)
+    End Sub
 End Class

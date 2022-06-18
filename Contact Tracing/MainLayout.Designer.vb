@@ -28,6 +28,7 @@ Partial Class MainLayout
         Me.formButton = New System.Windows.Forms.Button()
         Me.exitButton = New System.Windows.Forms.Button()
         Me.mainPanel = New System.Windows.Forms.Panel()
+        Me.submissionButton = New System.Windows.Forms.Button()
         Me.titlePanel.SuspendLayout()
         Me.controlPanel.SuspendLayout()
         Me.SuspendLayout()
@@ -55,6 +56,7 @@ Partial Class MainLayout
         'controlPanel
         '
         Me.controlPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(126, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(126, Byte), Integer))
+        Me.controlPanel.Controls.Add(Me.submissionButton)
         Me.controlPanel.Controls.Add(Me.formButton)
         Me.controlPanel.Controls.Add(Me.exitButton)
         Me.controlPanel.Dock = System.Windows.Forms.DockStyle.Left
@@ -100,6 +102,20 @@ Partial Class MainLayout
         Me.mainPanel.Size = New System.Drawing.Size(482, 514)
         Me.mainPanel.TabIndex = 2
         '
+        'submissionButton
+        '
+        Me.submissionButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer))
+        Me.submissionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.submissionButton.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.submissionButton.ForeColor = System.Drawing.Color.White
+        Me.submissionButton.Location = New System.Drawing.Point(6, 72)
+        Me.submissionButton.Margin = New System.Windows.Forms.Padding(0)
+        Me.submissionButton.Name = "submissionButton"
+        Me.submissionButton.Size = New System.Drawing.Size(138, 37)
+        Me.submissionButton.TabIndex = 2
+        Me.submissionButton.Text = "Submissions"
+        Me.submissionButton.UseVisualStyleBackColor = False
+        '
         'MainLayout
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -127,4 +143,5 @@ Partial Class MainLayout
     Friend WithEvents mainPanel As Panel
     Friend WithEvents exitButton As Button
     Friend WithEvents formButton As Button
+    Friend WithEvents submissionButton As Button
 End Class
