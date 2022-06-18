@@ -13,4 +13,17 @@ Public Class Viewer
             ViewerController.WriteText($"forms\{formListBox.SelectedItem.ToString()}.txt", submissionText)
         End If
     End Sub
+
+    Private Sub refreshButton_Click(sender As Object, e As EventArgs) Handles refreshButton.Click
+        Dim lastSelected As Integer = formListBox.SelectedIndex
+        formListBox.Items.Clear()
+        formListBox.Items.Add("All")
+        ViewerController.GenerateComboBoxList(formListBox)
+        formListBox.SelectedIndex = lastSelected
+        If formListBox.SelectedItem.ToString = "All" Then
+            ViewerController.WriteText("forms\SubmittedForms.txt", submissionText)
+        Else
+            ViewerController.WriteText($"forms\{formListBox.SelectedItem.ToString()}.txt", submissionText)
+        End If
+    End Sub
 End Class

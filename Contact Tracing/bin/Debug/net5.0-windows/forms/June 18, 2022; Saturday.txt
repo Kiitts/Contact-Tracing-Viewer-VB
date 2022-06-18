@@ -70,3 +70,27 @@ Phone Number: 092223113
 Email Address: try@gmail.com
 
 
+Date & Time Submitted: June 18, 2022; Saturday; 03:06 PM
+Name: Cardo Dalisay
+Address: Pulang Araw
+Age: 30
+Gender: Male
+Travelled: Yes
+Have Contact: No
+Sickness: Breathing Difficulty;
+Phone Number: 09123141231
+Email Address: cardo@dimamatay.com
+
+
+Date & Time Submitted: June 18, 2022; Saturday; 03:06 PM
+Name: anak ni cardo
+Address: balwarte ng pulangaraw
+Age: 13
+Gender: Female
+Travelled: No
+Have Contact: No
+Sickness: Breathing Difficulty; Cold; Fever;
+Phone Number: 09123141231
+Email Address: tagadyan@emailko.com
+
+
