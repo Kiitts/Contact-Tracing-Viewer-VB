@@ -23,7 +23,7 @@ Public Class MainLayout
     End Sub
 
     Private Sub submissionButton_Click(sender As Object, e As EventArgs) Handles submissionButton.Click
-        MainLayoutController.loadForm(Viewer, Me)
+        MainLayoutController.loadForm(PasswordChecker, Me)
     End Sub
 
     Private Sub formButton_Click(sender As Object, e As EventArgs) Handles formButton.Click
