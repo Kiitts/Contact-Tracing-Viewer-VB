@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ic/kApUxmdA58DtrJIAP9LepEjpjiURlRHUtNZtzT262hbjG/H2sJxruEINacRlnbnK/SVKWUFWaOM1Fll7zBg==",
+  "dgSpecHash": "GvX0osOOfQn2eQBQfJHL9BebVS1iA66YWLYdGU+QCFjNedhMHDHV1DLzOxm+KIYdmXYEopcWnYAdbyX/Yvg66A==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Desktop\\Kitts Things 1-1\\5-2nd sem\\Elective 3\\Assignments\\Contact Tracing Viewer\\Contact Tracing\\Contact Tracing.vbproj",
   "expectedPackageFiles": [
@@ -12,7 +12,7 @@
     "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\zxing.net\\0.16.6\\zxing.net.0.16.6.nupkg.sha512"
   ],
   "logs": [
     {

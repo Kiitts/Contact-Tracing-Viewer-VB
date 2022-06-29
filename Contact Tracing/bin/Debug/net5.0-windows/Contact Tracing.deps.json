@@ -8,11 +8,45 @@
     ".NETCoreApp,Version=v5.0": {
       "Contact Tracing/1.0.0": {
         "dependencies": {
+          "AForge": "2.2.5",
+          "AForge.Video": "2.2.5",
+          "AForge.Video.DirectShow": "2.2.5",
           "Newtonsoft.Json": "13.0.1",
-          "QRCoder": "1.4.3"
+          "QRCoder": "1.4.3",
+          "ZXing.Net": "0.16.6"
         },
         "runtime": {
           "Contact Tracing.dll": {}
+        }
+      },
+      "AForge/2.2.5": {
+        "runtime": {
+          "lib/AForge.dll": {
+            "assemblyVersion": "2.2.5.0",
+            "fileVersion": "2.2.5.0"
+          }
+        }
+      },
+      "AForge.Video/2.2.5": {
+        "dependencies": {
+          "AForge": "2.2.5"
+        },
+        "runtime": {
+          "lib/AForge.Video.dll": {
+            "assemblyVersion": "2.2.5.0",
+            "fileVersion": "2.2.5.0"
+          }
+        }
+      },
+      "AForge.Video.DirectShow/2.2.5": {
+        "dependencies": {
+          "AForge.Video": "2.2.5"
+        },
+        "runtime": {
+          "lib/AForge.Video.DirectShow.dll": {
+            "assemblyVersion": "2.2.5.0",
+            "fileVersion": "2.2.5.0"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/5.0.0": {},
@@ -64,6 +98,14 @@
             "fileVersion": "5.0.1221.52207"
           }
         }
+      },
+      "ZXing.Net/0.16.6": {
+        "runtime": {
+          "lib/netcoreapp3.1/zxing.dll": {
+            "assemblyVersion": "0.16.6.0",
+            "fileVersion": "0.16.6.0"
+          }
+        }
       }
     }
   },
@@ -72,6 +114,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AForge/2.2.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-clkumhM9DggqIzEXAHgVLeWO4arG5YfoPr7J4jfjJx35AoeEIJSSm49J25bwp/9mXQYLwi7y1Wunc8qgYJsGxg==",
+      "path": "aforge/2.2.5",
+      "hashPath": "aforge.2.2.5.nupkg.sha512"
+    },
+    "AForge.Video/2.2.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XqzcOXtBUagEPRqg/00oayxlCPmxP4284SdM62mVotsNoD03fs19BrzdMBfhUOOYPyd0B/IXH7tEWnSDmc2gxA==",
+      "path": "aforge.video/2.2.5",
+      "hashPath": "aforge.video.2.2.5.nupkg.sha512"
+    },
+    "AForge.Video.DirectShow/2.2.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pEch6felU/RGAbl0A7yjaQjsGxwiRFU9R+qBqR92wQo++XhzPLeQaZHnAPIBYaG7MfoqtjgCDkK4z3Tra4VQ3w==",
+      "path": "aforge.video.directshow/2.2.5",
+      "hashPath": "aforge.video.directshow.2.2.5.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
@@ -107,6 +170,13 @@
       "sha512": "sha512-rEQZuslijqdsO0pkJn7LtGBaMc//YVA8de0meGihkg9oLPaN+w+/Pb5d71lgp0YjPoKgBKNMvdq0IPnoW4PEng==",
       "path": "system.drawing.common/5.0.3",
       "hashPath": "system.drawing.common.5.0.3.nupkg.sha512"
+    },
+    "ZXing.Net/0.16.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0+6EcJ7Ve1BocwqvqpAmgMa7xF3wxqROcM3KvAE6WGNIqXLA5YEziLjRX+kKYVrcttlFRz1IaoRSzt/o6Ttviw==",
+      "path": "zxing.net/0.16.6",
+      "hashPath": "zxing.net.0.16.6.nupkg.sha512"
     }
   }
 }

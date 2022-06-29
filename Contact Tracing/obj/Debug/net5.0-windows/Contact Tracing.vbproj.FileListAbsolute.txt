@@ -44,3 +44,7 @@ C:\Users\User\Desktop\Kitts Things 1-1\5-2nd sem\Elective 3\Assignments\Contact 
 C:\Users\User\Desktop\Kitts Things 1-1\5-2nd sem\Elective 3\Assignments\Contact Tracing Viewer\Contact Tracing\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\User\Desktop\Kitts Things 1-1\5-2nd sem\Elective 3\Assignments\Contact Tracing Viewer\Contact Tracing\obj\Debug\net5.0-windows\Contact_Tracing.QRForm.resources
 C:\Users\User\Desktop\Kitts Things 1-1\5-2nd sem\Elective 3\Assignments\Contact Tracing Viewer\Contact Tracing\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Kitts Things 1-1\5-2nd sem\Elective 3\Assignments\Contact Tracing Viewer\Contact Tracing\bin\Debug\net5.0-windows\AForge.dll
+C:\Users\User\Desktop\Kitts Things 1-1\5-2nd sem\Elective 3\Assignments\Contact Tracing Viewer\Contact Tracing\bin\Debug\net5.0-windows\AForge.Video.dll
+C:\Users\User\Desktop\Kitts Things 1-1\5-2nd sem\Elective 3\Assignments\Contact Tracing Viewer\Contact Tracing\bin\Debug\net5.0-windows\AForge.Video.DirectShow.dll
+C:\Users\User\Desktop\Kitts Things 1-1\5-2nd sem\Elective 3\Assignments\Contact Tracing Viewer\Contact Tracing\bin\Debug\net5.0-windows\zxing.dll

@@ -2,6 +2,7 @@
 Imports Newtonsoft.Json
 Imports AForge.Video
 Imports AForge.Video.DirectShow
+Imports ZXing
 
 Module QRController
     Public isImageAGeneratedQR As Boolean = False
@@ -24,6 +25,9 @@ Module QRController
         Public EmailAddress As String
     End Class
 
+    ''' <summary>
+    ''' Will generate the qr code in the picture box
+    ''' </summary>
     Sub GenerateQR()
         isImageAGeneratedQR = True
         QRForm.qRBox.Image = Nothing
@@ -33,6 +37,10 @@ Module QRController
         QRForm.qRBox.Image = qrCode.GetGraphic(100)
     End Sub
 
+    ''' <summary>
+    ''' Generate the json details from the main form
+    ''' </summary>
+    ''' <returns>return the json string</returns>
     Function GenerateJSON() As String
         data = New QRInfo()
         data.Name = mainForm.nameInput.Text
@@ -66,11 +74,29 @@ Module QRController
         Return json
     End Function
 
+    ''' <summary>
+    ''' let you choose folder where to save the generated qr
+    ''' </summary>
     Public Sub SaveQR()
         If QRForm.folderQRBrowser.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
             Dim savePath As String = QRForm.folderQRBrowser.SelectedPath
             QRForm.qRBox.Image.Save(savePath + $"\{data.Name}.jpg")
             MessageBox.Show("Saved!", "Success!")
+        End If
+    End Sub
+
+    Public Sub CamToQR()
+        If QRForm.qRBox.Image IsNot Nothing Then
+            Dim qrcode As BarcodeReader = New BarcodeReader()
+            Dim result As Result = qrcode.Decode(DirectCast(QRForm.qRBox.Image, Bitmap))
+            If result IsNot Nothing Then
+                If QRForm.vid.IsRunning Then
+                    QRForm.vid.SignalToStop()
+                    QRForm.vid.WaitForStop()
+                    QRForm.vid.Stop()
+                    QRForm.checkForQr.Stop()
+                End If
+            End If
         End If
     End Sub
 End Module
