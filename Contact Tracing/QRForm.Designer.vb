@@ -25,6 +25,8 @@ Partial Class QRForm
         Me.qRBox = New System.Windows.Forms.PictureBox()
         Me.generateQRButton = New System.Windows.Forms.Button()
         Me.submitQRButton = New System.Windows.Forms.Button()
+        Me.saveButton = New System.Windows.Forms.Button()
+        Me.folderQRBrowser = New System.Windows.Forms.FolderBrowserDialog()
         CType(Me.qRBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -65,11 +67,26 @@ Partial Class QRForm
         Me.submitQRButton.Text = "Submit QR"
         Me.submitQRButton.UseVisualStyleBackColor = False
         '
+        'saveButton
+        '
+        Me.saveButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.saveButton.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.saveButton.ForeColor = System.Drawing.Color.White
+        Me.saveButton.Location = New System.Drawing.Point(199, 412)
+        Me.saveButton.Margin = New System.Windows.Forms.Padding(0)
+        Me.saveButton.Name = "saveButton"
+        Me.saveButton.Size = New System.Drawing.Size(132, 29)
+        Me.saveButton.TabIndex = 20
+        Me.saveButton.Text = "Save QR"
+        Me.saveButton.UseVisualStyleBackColor = False
+        '
         'QRForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(549, 450)
+        Me.Controls.Add(Me.saveButton)
         Me.Controls.Add(Me.submitQRButton)
         Me.Controls.Add(Me.generateQRButton)
         Me.Controls.Add(Me.qRBox)
@@ -85,4 +102,6 @@ Partial Class QRForm
     Friend WithEvents qRBox As PictureBox
     Friend WithEvents generateQRButton As Button
     Friend WithEvents submitQRButton As Button
+    Friend WithEvents saveButton As Button
+    Friend WithEvents folderQRBrowser As FolderBrowserDialog
 End Class

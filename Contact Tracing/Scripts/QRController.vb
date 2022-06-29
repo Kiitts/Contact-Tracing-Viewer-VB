@@ -1,5 +1,7 @@
 ﻿Imports QRCoder
 Imports Newtonsoft.Json
+Imports AForge.Video
+Imports AForge.Video.DirectShow
 
 Module QRController
     Public isImageAGeneratedQR As Boolean = False
@@ -8,6 +10,7 @@ Module QRController
     Public contactRadio = New RadioButton() {mainForm.contactYes, mainForm.contactNo}
     Public checkboxes = New CheckBox() _
         {mainForm.sicknessFever, mainForm.sicknessCold, mainForm.sicknessBreath}
+    Dim data As QRInfo
     <Serializable>
     Class QRInfo
         Public Name As String
@@ -31,7 +34,7 @@ Module QRController
     End Sub
 
     Function GenerateJSON() As String
-        Dim data As QRInfo = New QRInfo()
+        data = New QRInfo()
         data.Name = mainForm.nameInput.Text
         data.Address = mainForm.addressInput.Text
         data.Age = mainForm.ageInput.Text
@@ -62,4 +65,12 @@ Module QRController
         Dim json As String = JsonConvert.SerializeObject(data, Formatting.Indented)
         Return json
     End Function
+
+    Public Sub SaveQR()
+        If QRForm.folderQRBrowser.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+            Dim savePath As String = QRForm.folderQRBrowser.SelectedPath
+            QRForm.qRBox.Image.Save(savePath + $"\{data.Name}.jpg")
+            MessageBox.Show("Saved!", "Success!")
+        End If
+    End Sub
 End Module
