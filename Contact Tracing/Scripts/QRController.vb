@@ -5,7 +5,6 @@ Imports AForge.Video.DirectShow
 Imports ZXing
 
 Module QRController
-    Public isImageAGeneratedQR As Boolean = False
     Public genderRadio = New RadioButton() {mainForm.genderMale, mainForm.genderFemale}
     Public travelledRadio = New RadioButton() {mainForm.travelledYes, mainForm.travelledNo}
     Public contactRadio = New RadioButton() {mainForm.contactYes, mainForm.contactNo}
@@ -29,7 +28,6 @@ Module QRController
     ''' Will generate the qr code in the picture box
     ''' </summary>
     Sub GenerateQR()
-        isImageAGeneratedQR = True
         QRForm.qRBox.Image = Nothing
         Dim qr As QRCodeGenerator = New QRCodeGenerator()
         Dim qrData = qr.CreateQrCode(GenerateJSON(), QRCodeGenerator.ECCLevel.Q)
@@ -85,6 +83,10 @@ Module QRController
         End If
     End Sub
 
+    ''' <summary>
+    ''' will check if the cam detects a qr and stop the camera if so and save the data in
+    ''' the qr code
+    ''' </summary>
     Public Sub CamToQR()
         If QRForm.qRBox.Image IsNot Nothing Then
             Dim qrcode As BarcodeReader = New BarcodeReader()
@@ -94,9 +96,27 @@ Module QRController
                     QRForm.vid.SignalToStop()
                     QRForm.vid.WaitForStop()
                     QRForm.vid.Stop()
-                    QRForm.checkForQr.Stop()
                 End If
+                QRForm.checkForQr.Stop()
+                SaveQRDetectedResult(result.ToString())
             End If
         End If
+    End Sub
+
+    ''' <summary>
+    ''' save result as a deserialized qrinfo
+    ''' </summary>
+    ''' <param name="result">reference of a string that has the result</param>
+    Private Sub SaveQRDetectedResult(result As String)
+        Dim data As QRInfo = JsonConvert.DeserializeObject(Of QRInfo)(result)
+        FillForm(data)
+    End Sub
+
+    ''' <summary>
+    ''' fill the input form in the mainform
+    ''' </summary>
+    ''' <param name="data">reference of the data</param>
+    Private Sub FillForm(data As QRInfo)
+
     End Sub
 End Module

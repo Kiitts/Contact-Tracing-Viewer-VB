@@ -4,12 +4,15 @@ Imports AForge.Video
 Imports AForge.Video.DirectShow
 
 Public Class QRForm
+    Public isImageAGeneratedQR As Boolean = False
     Public vid As VideoCaptureDevice
     Public bmp As Bitmap
     Public camList As FilterInfoCollection
     Private Sub generateQRButton_Click(sender As Object, e As EventArgs) Handles generateQRButton.Click
+        checkForQr.Stop()
         qRBox.Image = Nothing
         qRBox.SizeMode = PictureBoxSizeMode.StretchImage
+        isImageAGeneratedQR = True
         Dim failedInput As String = CheckForInputs()
         If failedInput IsNot Nothing Then
             MessageBox.Show("Survey Form is Incomplete!", "Error!") '
@@ -19,7 +22,7 @@ Public Class QRForm
     End Sub
 
     Private Sub saveButton_Click(sender As Object, e As EventArgs) Handles saveButton.Click
-        If QRController.isImageAGeneratedQR Then
+        If isImageAGeneratedQR Then
             SaveQR()
         Else
             MessageBox.Show("No QR Generated", "Error")
@@ -37,6 +40,7 @@ Public Class QRForm
     Private Sub submitQRButton_Click(sender As Object, e As EventArgs) Handles submitQRButton.Click
         qRBox.Image = Nothing
         qRBox.SizeMode = PictureBoxSizeMode.CenterImage
+        isImageAGeneratedQR = False
         checkForQr.Start()
         Dim cameras As VideoCaptureDeviceForm = New VideoCaptureDeviceForm
         If cameras.ShowDialog() = Windows.Forms.DialogResult.OK Then
