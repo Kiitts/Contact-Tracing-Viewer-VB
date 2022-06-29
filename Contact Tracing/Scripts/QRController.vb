@@ -1,0 +1,3 @@
+﻿Module QRController
+
+End Module
