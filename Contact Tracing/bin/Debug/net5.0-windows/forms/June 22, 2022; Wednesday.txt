@@ -1,0 +1,12 @@
+﻿Date & Time Submitted: June 22, 2022; Wednesday; 12:06 PM
+Name: Willy wonka
+Address: Chocolate Factory
+Age: 24
+Gender: Male
+Travelled: No
+Have Contact: No
+Sickness: Breathing Difficulty;
+Phone Number: 09123141232
+Email Address: chocolate@willy.com
+
+

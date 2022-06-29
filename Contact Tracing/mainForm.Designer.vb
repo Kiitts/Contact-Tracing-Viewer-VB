@@ -48,6 +48,7 @@ Partial Class mainForm
         Me.submitButton = New System.Windows.Forms.Button()
         Me.resetButton = New System.Windows.Forms.Button()
         Me.messageLabel = New System.Windows.Forms.Label()
+        Me.qRButton = New System.Windows.Forms.Button()
         Me.genderInput.SuspendLayout()
         Me.travelledInput.SuspendLayout()
         Me.contactInput.SuspendLayout()
@@ -58,7 +59,7 @@ Partial Class mainForm
         '
         Me.nameLabel.AutoSize = True
         Me.nameLabel.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.nameLabel.Location = New System.Drawing.Point(12, 9)
+        Me.nameLabel.Location = New System.Drawing.Point(10, 43)
         Me.nameLabel.Name = "nameLabel"
         Me.nameLabel.Size = New System.Drawing.Size(53, 17)
         Me.nameLabel.TabIndex = 0
@@ -66,7 +67,7 @@ Partial Class mainForm
         '
         'nameInput
         '
-        Me.nameInput.Location = New System.Drawing.Point(102, 6)
+        Me.nameInput.Location = New System.Drawing.Point(100, 40)
         Me.nameInput.Name = "nameInput"
         Me.nameInput.PlaceholderText = "Juan G. Bonifacio"
         Me.nameInput.Size = New System.Drawing.Size(356, 23)
@@ -76,7 +77,7 @@ Partial Class mainForm
         '
         Me.addressLabel.AutoSize = True
         Me.addressLabel.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.addressLabel.Location = New System.Drawing.Point(12, 39)
+        Me.addressLabel.Location = New System.Drawing.Point(10, 73)
         Me.addressLabel.Name = "addressLabel"
         Me.addressLabel.Size = New System.Drawing.Size(80, 17)
         Me.addressLabel.TabIndex = 2
@@ -84,7 +85,7 @@ Partial Class mainForm
         '
         'addressInput
         '
-        Me.addressInput.Location = New System.Drawing.Point(102, 36)
+        Me.addressInput.Location = New System.Drawing.Point(100, 70)
         Me.addressInput.Name = "addressInput"
         Me.addressInput.PlaceholderText = "[Bldg#/House#] [Street] [Brgy]"
         Me.addressInput.Size = New System.Drawing.Size(356, 23)
@@ -94,7 +95,7 @@ Partial Class mainForm
         '
         Me.ageLabel.AutoSize = True
         Me.ageLabel.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ageLabel.Location = New System.Drawing.Point(12, 69)
+        Me.ageLabel.Location = New System.Drawing.Point(10, 103)
         Me.ageLabel.Name = "ageLabel"
         Me.ageLabel.Size = New System.Drawing.Size(44, 17)
         Me.ageLabel.TabIndex = 4
@@ -102,7 +103,7 @@ Partial Class mainForm
         '
         'ageInput
         '
-        Me.ageInput.Location = New System.Drawing.Point(102, 66)
+        Me.ageInput.Location = New System.Drawing.Point(100, 100)
         Me.ageInput.Name = "ageInput"
         Me.ageInput.PlaceholderText = "22"
         Me.ageInput.Size = New System.Drawing.Size(356, 23)
@@ -113,7 +114,7 @@ Partial Class mainForm
         Me.genderInput.Controls.Add(Me.genderFemale)
         Me.genderInput.Controls.Add(Me.genderMale)
         Me.genderInput.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.genderInput.Location = New System.Drawing.Point(13, 99)
+        Me.genderInput.Location = New System.Drawing.Point(11, 133)
         Me.genderInput.Name = "genderInput"
         Me.genderInput.Size = New System.Drawing.Size(97, 81)
         Me.genderInput.TabIndex = 6
@@ -147,7 +148,7 @@ Partial Class mainForm
         Me.travelledInput.Controls.Add(Me.travelledNo)
         Me.travelledInput.Controls.Add(Me.travelledYes)
         Me.travelledInput.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.travelledInput.Location = New System.Drawing.Point(13, 186)
+        Me.travelledInput.Location = New System.Drawing.Point(11, 220)
         Me.travelledInput.Name = "travelledInput"
         Me.travelledInput.Size = New System.Drawing.Size(445, 96)
         Me.travelledInput.TabIndex = 7
@@ -181,7 +182,7 @@ Partial Class mainForm
         Me.contactInput.Controls.Add(Me.contactNo)
         Me.contactInput.Controls.Add(Me.contactYes)
         Me.contactInput.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.contactInput.Location = New System.Drawing.Point(13, 288)
+        Me.contactInput.Location = New System.Drawing.Point(11, 322)
         Me.contactInput.Name = "contactInput"
         Me.contactInput.Size = New System.Drawing.Size(445, 110)
         Me.contactInput.TabIndex = 8
@@ -217,7 +218,7 @@ Partial Class mainForm
         Me.sicknessInput.Controls.Add(Me.sicknessCold)
         Me.sicknessInput.Controls.Add(Me.sicknessFever)
         Me.sicknessInput.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.sicknessInput.Location = New System.Drawing.Point(13, 404)
+        Me.sicknessInput.Location = New System.Drawing.Point(11, 438)
         Me.sicknessInput.Name = "sicknessInput"
         Me.sicknessInput.Size = New System.Drawing.Size(445, 137)
         Me.sicknessInput.TabIndex = 9
@@ -257,7 +258,7 @@ Partial Class mainForm
         '
         'numberInput
         '
-        Me.numberInput.Location = New System.Drawing.Point(143, 547)
+        Me.numberInput.Location = New System.Drawing.Point(141, 581)
         Me.numberInput.Name = "numberInput"
         Me.numberInput.Size = New System.Drawing.Size(315, 23)
         Me.numberInput.TabIndex = 11
@@ -266,7 +267,7 @@ Partial Class mainForm
         '
         Me.numberLabel.AutoSize = True
         Me.numberLabel.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.numberLabel.Location = New System.Drawing.Point(12, 550)
+        Me.numberLabel.Location = New System.Drawing.Point(10, 584)
         Me.numberLabel.Name = "numberLabel"
         Me.numberLabel.Size = New System.Drawing.Size(125, 17)
         Me.numberLabel.TabIndex = 10
@@ -274,7 +275,7 @@ Partial Class mainForm
         '
         'emailInput
         '
-        Me.emailInput.Location = New System.Drawing.Point(143, 577)
+        Me.emailInput.Location = New System.Drawing.Point(141, 611)
         Me.emailInput.Name = "emailInput"
         Me.emailInput.PlaceholderText = "Optional"
         Me.emailInput.Size = New System.Drawing.Size(315, 23)
@@ -284,7 +285,7 @@ Partial Class mainForm
         '
         Me.emailLabel.AutoSize = True
         Me.emailLabel.Font = New System.Drawing.Font("Courier New", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.emailLabel.Location = New System.Drawing.Point(12, 580)
+        Me.emailLabel.Location = New System.Drawing.Point(10, 614)
         Me.emailLabel.Name = "emailLabel"
         Me.emailLabel.Size = New System.Drawing.Size(134, 17)
         Me.emailLabel.TabIndex = 12
@@ -296,7 +297,7 @@ Partial Class mainForm
         Me.submitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.submitButton.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.submitButton.ForeColor = System.Drawing.Color.White
-        Me.submitButton.Location = New System.Drawing.Point(313, 641)
+        Me.submitButton.Location = New System.Drawing.Point(312, 675)
         Me.submitButton.Margin = New System.Windows.Forms.Padding(0)
         Me.submitButton.Name = "submitButton"
         Me.submitButton.Size = New System.Drawing.Size(145, 41)
@@ -310,7 +311,7 @@ Partial Class mainForm
         Me.resetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.resetButton.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.resetButton.ForeColor = System.Drawing.Color.White
-        Me.resetButton.Location = New System.Drawing.Point(12, 656)
+        Me.resetButton.Location = New System.Drawing.Point(7, 675)
         Me.resetButton.Margin = New System.Windows.Forms.Padding(0)
         Me.resetButton.Name = "resetButton"
         Me.resetButton.Size = New System.Drawing.Size(69, 26)
@@ -322,18 +323,33 @@ Partial Class mainForm
         '
         Me.messageLabel.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point)
         Me.messageLabel.ForeColor = System.Drawing.Color.Red
-        Me.messageLabel.Location = New System.Drawing.Point(13, 603)
+        Me.messageLabel.Location = New System.Drawing.Point(11, 637)
         Me.messageLabel.Name = "messageLabel"
         Me.messageLabel.Size = New System.Drawing.Size(445, 35)
         Me.messageLabel.TabIndex = 16
         Me.messageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'qRButton
+        '
+        Me.qRButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(79, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(79, Byte), Integer))
+        Me.qRButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.qRButton.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.qRButton.ForeColor = System.Drawing.Color.White
+        Me.qRButton.Location = New System.Drawing.Point(356, 8)
+        Me.qRButton.Margin = New System.Windows.Forms.Padding(0)
+        Me.qRButton.Name = "qRButton"
+        Me.qRButton.Size = New System.Drawing.Size(101, 29)
+        Me.qRButton.TabIndex = 17
+        Me.qRButton.Text = "Open QR"
+        Me.qRButton.UseVisualStyleBackColor = False
         '
         'mainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(468, 698)
+        Me.ClientSize = New System.Drawing.Size(466, 725)
+        Me.Controls.Add(Me.qRButton)
         Me.Controls.Add(Me.messageLabel)
         Me.Controls.Add(Me.resetButton)
         Me.Controls.Add(Me.submitButton)
@@ -393,4 +409,5 @@ Partial Class mainForm
     Friend WithEvents submitButton As Button
     Friend WithEvents resetButton As Button
     Friend WithEvents messageLabel As Label
+    Friend WithEvents qRButton As Button
 End Class

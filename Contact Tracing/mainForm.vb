@@ -31,4 +31,8 @@ Public Class mainForm
     Private Sub resetButton_Click(sender As Object, e As EventArgs) Handles resetButton.Click
         ResetInputs()
     End Sub
+
+    Private Sub qRButton_Click(sender As Object, e As EventArgs) Handles qRButton.Click
+        QRForm.Show()
+    End Sub
 End Class

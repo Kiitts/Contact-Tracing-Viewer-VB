@@ -1,0 +1,24 @@
+﻿Date & Time Submitted: June 24, 2022; Friday; 08:06 AM
+Name: Nami
+Address: Thousand Sunny Go
+Age: 22
+Gender: Female
+Travelled: Yes
+Have Contact: No
+Sickness: Cold;
+Phone Number: 09123124123
+Email Address: asdasf@gmail.com
+
+
+Date & Time Submitted: June 24, 2022; Friday; 08:06 AM
+Name: Robin
+Address: Sunny Go
+Age: 22
+Gender: Female
+Travelled: No
+Have Contact: No
+Sickness: Breathing Difficulty; Cold; Fever;
+Phone Number: 09123141232
+Email Address: robin@gmail.com
+
+
