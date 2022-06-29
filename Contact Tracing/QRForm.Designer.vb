@@ -33,6 +33,7 @@ Partial Class QRForm
         Me.qRBox.Location = New System.Drawing.Point(117, 12)
         Me.qRBox.Name = "qRBox"
         Me.qRBox.Size = New System.Drawing.Size(300, 300)
+        Me.qRBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.qRBox.TabIndex = 0
         Me.qRBox.TabStop = False
         '
