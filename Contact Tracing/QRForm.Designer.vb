@@ -28,7 +28,6 @@ Partial Class QRForm
         Me.submitQRButton = New System.Windows.Forms.Button()
         Me.saveButton = New System.Windows.Forms.Button()
         Me.folderQRBrowser = New System.Windows.Forms.FolderBrowserDialog()
-        Me.camsDropDown = New System.Windows.Forms.ComboBox()
         Me.checkForQr = New System.Windows.Forms.Timer(Me.components)
         CType(Me.qRBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -84,15 +83,6 @@ Partial Class QRForm
         Me.saveButton.Text = "Save QR"
         Me.saveButton.UseVisualStyleBackColor = False
         '
-        'camsDropDown
-        '
-        Me.camsDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.camsDropDown.FormattingEnabled = True
-        Me.camsDropDown.Location = New System.Drawing.Point(424, 13)
-        Me.camsDropDown.Name = "camsDropDown"
-        Me.camsDropDown.Size = New System.Drawing.Size(121, 23)
-        Me.camsDropDown.TabIndex = 21
-        '
         'checkForQr
         '
         '
@@ -101,7 +91,6 @@ Partial Class QRForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(549, 450)
-        Me.Controls.Add(Me.camsDropDown)
         Me.Controls.Add(Me.saveButton)
         Me.Controls.Add(Me.submitQRButton)
         Me.Controls.Add(Me.generateQRButton)
@@ -120,6 +109,5 @@ Partial Class QRForm
     Friend WithEvents submitQRButton As Button
     Friend WithEvents saveButton As Button
     Friend WithEvents folderQRBrowser As FolderBrowserDialog
-    Friend WithEvents camsDropDown As ComboBox
     Friend WithEvents checkForQr As Timer
 End Class

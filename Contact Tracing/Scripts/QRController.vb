@@ -92,15 +92,26 @@ Module QRController
             Dim qrcode As BarcodeReader = New BarcodeReader()
             Dim result As Result = qrcode.Decode(DirectCast(QRForm.qRBox.Image, Bitmap))
             If result IsNot Nothing Then
+                StopCam()
+                QRForm.checkForQr.Stop()
+                SaveQRDetectedResult(result.ToString())
+            End If
+        End If
+    End Sub
+
+    Public Sub StopCam()
+        Try
+            If QRForm.vid IsNot Nothing Then
                 If QRForm.vid.IsRunning Then
                     QRForm.vid.SignalToStop()
                     QRForm.vid.WaitForStop()
                     QRForm.vid.Stop()
                 End If
-                QRForm.checkForQr.Stop()
-                SaveQRDetectedResult(result.ToString())
             End If
-        End If
+        Catch
+
+        End Try
+
     End Sub
 
     ''' <summary>
@@ -117,6 +128,40 @@ Module QRController
     ''' </summary>
     ''' <param name="data">reference of the data</param>
     Private Sub FillForm(data As QRInfo)
-
+        'Debug.WriteLine(data.Symptoms)
+        'Debug.WriteLine(data.Symptoms.Split(";"))
+        mainForm.nameInput.Text = data.Name
+        mainForm.addressInput.Text = data.Address
+        mainForm.ageInput.Text = data.Age
+        For Each gender As RadioButton In genderRadio
+            If gender.Text = data.Gender Then
+                gender.Checked = True
+                Exit For
+            End If
+        Next
+        For Each travelled As RadioButton In travelledRadio
+            If travelled.Text = data.Travelled Then
+                travelled.Checked = True
+                Exit For
+            End If
+        Next
+        For Each contacted As RadioButton In contactRadio
+            If contacted.Text = data.Contacted Then
+                contacted.Checked = True
+                Exit For
+            End If
+        Next
+        For Each symptom As String In data.Symptoms.Split(";")
+            If symptom IsNot Nothing Or symptom IsNot "" Then
+                For Each sick As CheckBox In checkboxes
+                    If symptom = sick.Text Then
+                        sick.Checked = True
+                    End If
+                Next
+            End If
+        Next
+        mainForm.numberInput.Text = data.PhoneNumber
+        mainForm.emailInput.Text = data.EmailAddress
+        MessageBox.Show("The survey form is now filled!", "Success!")
     End Sub
 End Module

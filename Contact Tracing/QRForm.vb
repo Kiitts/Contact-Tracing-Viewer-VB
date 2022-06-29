@@ -10,6 +10,7 @@ Public Class QRForm
     Public camList As FilterInfoCollection
     Private Sub generateQRButton_Click(sender As Object, e As EventArgs) Handles generateQRButton.Click
         checkForQr.Stop()
+        StopCam()
         qRBox.Image = Nothing
         qRBox.SizeMode = PictureBoxSizeMode.StretchImage
         isImageAGeneratedQR = True
@@ -30,11 +31,7 @@ Public Class QRForm
     End Sub
 
     Private Sub QRForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        If vid.IsRunning Then
-            vid.SignalToStop()
-            vid.WaitForStop()
-            vid.Stop()
-        End If
+        StopCam()
     End Sub
 
     Private Sub submitQRButton_Click(sender As Object, e As EventArgs) Handles submitQRButton.Click
